@@ -1,0 +1,107 @@
+/*padding and border included in width and height*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/img/Scene.jpg");
+  background-color: #e2f0e2;
+  font-family: "Josefin", "roboto", "Sans", sans-serif;
+  font-weight: 600;
+}
+header {
+  width: 100%;
+  height: 100px;
+}
+
+#head {
+  width: 70%;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrappers */
+.wrapper-main {
+  margin: 0 20vw;
+}
+
+.wrapper-gallery {
+  margin: 0 20vw;
+}
+
+/* Default text styling */
+p {
+  font-family: "Josefin", "roboto", "Sans", sans-serif;
+  font-size: 14px;
+  display: block;
+  margin: 10px 200px;
+}
+
+h2 {
+  font-family: "Josefin", "roboto", "Sans", sans-serif;
+  font-size: 28px;
+}
+
+h5 {
+  text-align: center;
+  font-family: "Josefin", "roboto", "Sans", sans-serif;
+  font-size: 18px;
+}
+
+#header-main nav {
+  display: grid;
+  grid-template-columns: 240px 3fr;
+  grid-template-rows: auto;
+  padding-bottom: 20px;
+}
+
+#header-main nav img {
+  height: 50px;
+  margin: 25px 0;
+  border-radius: 20px;
+}
+
+#header-main nav ul {
+  justify-self: right;
+}
+
+#header-main nav ul li {
+  display: inline-block;
+  list-style: none;
+  justify-self: right;
+  margin: 20px 0;
+}
+
+#header-main nav ul li a {
+  color: rgb(17, 17, 17);
+  font-family: "Josefin", "roboto", "sans-serif";
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#header-main nav ul li a:hover {
+  color: rgb(255, 0, 0);
+  font-family: "Josefin", "roboto", "sans-serif";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  #head {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+    background-color: #e2f0e2;
+  }
+
+  .wrapper-gallery {
+    margin-top: 150px;
+    padding-top: 20px;
+  }
+}
